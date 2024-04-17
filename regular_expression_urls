@@ -1,0 +1,7 @@
+function domainName(url){
+  var match = url.match(/[/.]([^/.]+)/);
+  console.log(match);
+  console.log(match[1]);
+}
+
+domainName("http://google.com");

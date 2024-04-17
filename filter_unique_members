@@ -1,0 +1,24 @@
+function unique(arr) {
+  let unique_strings = [];
+
+  arr.forEach((str) => {
+
+    if (!unique_strings.includes(str)){
+        unique_strings.push(str);
+    }
+    
+    
+
+  })
+  return unique_strings;
+}
+
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+console.log(unique(strings));
+
+new_arr = [...new Set(strings)];
+
+console.log(new Set(strings));
